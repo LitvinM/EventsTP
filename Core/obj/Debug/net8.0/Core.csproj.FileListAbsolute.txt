@@ -1,0 +1,16 @@
+Z:\sharps\EventsTP\Core\bin\Debug\net8.0\Core.deps.json
+Z:\sharps\EventsTP\Core\bin\Debug\net8.0\Core.dll
+Z:\sharps\EventsTP\Core\bin\Debug\net8.0\Core.pdb
+<<<<<<< HEAD
+=======
+Z:\sharps\EventsTP\Core\obj\Debug\net8.0\Core.csproj.AssemblyReference.cache
+>>>>>>> ba1505c709d05d12d481ed83d53eb8355fe75b79
+Z:\sharps\EventsTP\Core\obj\Debug\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+Z:\sharps\EventsTP\Core\obj\Debug\net8.0\Core.AssemblyInfoInputs.cache
+Z:\sharps\EventsTP\Core\obj\Debug\net8.0\Core.AssemblyInfo.cs
+Z:\sharps\EventsTP\Core\obj\Debug\net8.0\Core.csproj.CoreCompileInputs.cache
+Z:\sharps\EventsTP\Core\obj\Debug\net8.0\Core.sourcelink.json
+Z:\sharps\EventsTP\Core\obj\Debug\net8.0\Core.dll
+Z:\sharps\EventsTP\Core\obj\Debug\net8.0\refint\Core.dll
+Z:\sharps\EventsTP\Core\obj\Debug\net8.0\Core.pdb
+Z:\sharps\EventsTP\Core\obj\Debug\net8.0\ref\Core.dll

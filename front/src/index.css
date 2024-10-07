@@ -1,0 +1,468 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: linear-gradient(135deg, #67b26f 0%, #4ca2cd 100%);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1, .header h2 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.header .Link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.header .Link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 5px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1em;
+  outline: none;
+  margin-right: 5px;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem #67b26f;
+}
+
+.search-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(0, 255, 0, 0.25);
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color:  rgba(0, 180, 0, 0.25);
+}
+
+
+.cards-container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.title {
+  cursor: default;
+  background-color: #333;
+  color: white;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.red{
+  background-color: rgba(255, 0, 0, 0.25) !important;
+}
+
+.card {
+  cursor: pointer;
+  background-color: white;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 2.1fr 2.1fr 2fr 2fr 1fr;
+  padding: 20px 30px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.max-amount{
+  justify-self: right;
+}
+
+/* Стили для кнопки */
+.button {
+  background-color: #4ca2cd;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s, transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #67b26f;
+  transform: scale(1.05);
+}
+
+.button span {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.addPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 30px auto;
+  border: 1px solid #e0e0e0;
+}
+
+.addLabel {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.addLabel p {
+  margin: 0 0 5px 0;
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+.addPage input[type="text"],
+.addPage input[type="datetime-local"],
+.addPage input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: calc(100% - 22px);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+}
+
+.addPage input[type="text"]:focus,
+.addPage input[type="datetime-local"]:focus,
+.addPage input[type="number"]:focus {
+  border-color: #4ca2cd;
+  box-shadow: 0 0 5px rgba(76, 162, 205, 0.5);
+}
+
+.addPage button[type="submit"] {
+  background-color: #67b26f;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s, transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  margin-top: 20px;
+}
+
+.addPage button[type="submit"]:hover {
+  background-color: #4ca2cd;
+  transform: scale(1.05);
+}
+
+.addPage button span {
+  margin-left: 5px;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 30px auto;
+  border: 1px solid #e0e0e0;
+}
+
+.authForm h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.authLabel {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.authLabel p {
+  margin: 0 0 5px 0;
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+.authForm input[type="text"],
+.authForm input[type="email"],
+.authForm input[type="password"],
+.authForm input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: calc(100% - 22px);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+}
+
+.authForm input[type="text"]:focus,
+.authForm input[type="email"]:focus,
+.authForm input[type="password"]:focus,
+.authForm input[type="date"]:focus {
+  border-color: #4ca2cd;
+  box-shadow: 0 0 5px rgba(76, 162, 205, 0.5);
+}
+
+.authForm button[type="submit"] {
+  background-color: #67b26f;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s, transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  margin-top: 20px;
+}
+
+.authForm button[type="submit"]:hover {
+  background-color: #4ca2cd;
+  transform: scale(1.05);
+}
+
+.authForm button span {
+  margin-left: 5px;
+}
+
+.subscribe-to-the-event {
+  background-color: #67b26f;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s, transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  margin-top: 20px;
+}
+.subscribe-to-the-event:hover{
+  background-color: #4ca2cd;
+  transform: scale(1.05);
+}
+
+.subscribe-to-the-event span {
+  margin-left: 5px;
+}
+
+.lr-link{
+  text-decoration: none;
+  color: black;
+}
+
+.participants-list {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.participants-list li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.filter-container {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.filter-select:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.filter-select option {
+  padding: 10px;
+}
+
+.event-image{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.event-page {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.event-page p {
+  margin-bottom: 16px;
+}
+
+.event-page strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: background-color 0.25s ease-in;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.subscribe-to-the-event {
+  background-color: #28a745;
+}
+
+.subscribe-to-the-event:hover {
+  background-color: #218838;
+}
+
+.participants-list {
+  list-style: none;
+  padding: 0;
+}
+
+.participants-list li {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.participants-list li:last-child {
+  border-bottom: none;
+}
+
+.red-button{
+  background-color: rgba(255, 0, 0, 0.5);
+  transition: background-color 0.25s ease-in;
+}
+
+.red-button:hover{
+  background-color: rgba(150, 0, 0, 0.9);
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: background-color 0.15s ease-in;
+}
+
+.custom-file-upload:hover{
+  background-color: #003baf;
+}
+
+#file-upload {
+  display: none;
+}
+
+.file-name {
+  font-size: 14px;
+  color: #666;
+}

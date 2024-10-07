@@ -1,0 +1,36 @@
+name: events
+services:
+  webapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 5175:80
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=80
+    depends_on:
+      database:
+        condition: service_started
+
+  database:
+    image: postgres:16
+    restart: always
+    environment:
+      - POSTGRES_DB=event_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1234
+    ports:
+      - 5434:5432
+
+  front:
+    build:
+      context: ./front
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 3000:80
+    depends_on:
+      webapi:
+        condition: service_started

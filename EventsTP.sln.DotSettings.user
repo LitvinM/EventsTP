@@ -1,0 +1,10 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9ab3f160_002D8e53_002D4f52_002Da40c_002D9b0a0c3c8bb9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="AdminControllerTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E6CAD2D8-5D2F-43B7-BB7F-0B8D5B673055::net8.0::Tests.AdminControllerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E6CAD2D8-5D2F-43B7-BB7F-0B8D5B673055::net8.0::Tests.AuthControllerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E6CAD2D8-5D2F-43B7-BB7F-0B8D5B673055::net8.0::YourProjectName.Tests.AuthControllerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E6CAD2D8-5D2F-43B7-BB7F-0B8D5B673055::net8.0::Tests.EventControllerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E6CAD2D8-5D2F-43B7-BB7F-0B8D5B673055::net8.0::Tests.ParticipantControllerTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
